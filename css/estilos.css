@@ -1,0 +1,470 @@
+/* CSS General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  color: white;
+  font: 200 14px "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #999;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 55px;
+  background-color: #222;
+  border-bottom: 1px solid white;
+  padding-top: 10px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+  display: inline-flex;
+  gap: 20px;
+}
+
+nav ul li {
+  padding-top: 12px;
+  text-transform: uppercase;
+}
+
+section {
+  padding: 30px 100px;
+}
+
+p {
+  text-align: justify;
+}
+
+cite {
+  font-weight: 300;
+}
+
+i {
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+i:hover {
+  color: #ffc900;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffc900;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  float: left;
+  margin-right: 10px;
+}
+
+button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+footer {
+  height: 55px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: #222;
+}
+
+footer ul {
+  display: inline-flex;
+  gap: 15px;
+}
+
+/* Específicos */
+.hastag {
+  color: #ffc900;
+}
+
+.seccion {
+  padding: 20px 100px;
+}
+
+.logo {
+  padding-top: 0;
+}
+
+#redessociales {
+  margin-top: 20px;
+}
+
+#inicio {
+  background-image: url("../imagenes/fondoPortfolio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 280px;
+  padding-top: 95px;
+  color: white;
+}
+
+#experiencia {
+  background-color: white;
+  color: #222;
+}
+
+#experiencia h2,
+#portfolio h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#experiencia h3,
+#portfolio h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#portfolio {
+  border-top: 1px solid #ffc900;
+  padding: 20px 0;
+}
+
+.masinfo button {
+  background-color: #ffc900;
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 5px 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.masinfo button:hover {
+  background-color: #e5b800;
+}
+
+#contactar {
+  background-image: url("../imagenes/fondo_contactar.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #ffc900;
+  color: #222;
+  padding: 50px 100px;
+}
+
+/* Grid Sobremí */
+#sobremi {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+#sobremi h2 {
+  margin-bottom: 15px;
+}
+
+#sobremi .masinfo {
+  margin-top: 15px;
+}
+
+#sobremi .masinfo button {
+  padding: 5px 30px;
+}
+
+/* Portfolio Cards */
+.filaportfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 15px 0;
+}
+
+.card {
+  width: 250px;
+  background-color: #191919;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img{
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.card h3 {
+  color: #ffc900;
+}
+
+.card h4,
+.card p,
+.card .masinfo {
+  padding: 0 15px;
+}
+
+.card .masinfo {
+  margin: 15px 0;
+  height: 26px;
+  text-align: right;
+}
+
+.card .masinfo button {
+  background-color: #ffc900;
+  border: none;
+  cursor: pointer;
+}
+
+/* Experiencia Cards */
+.gridexp {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.cardexp {
+  background-color: #222;
+  border-radius: 15px;
+  color: white;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.cardexp h2 {
+  margin-bottom: 5px;
+}
+
+.cardexp h3 {
+  margin-bottom: 10px;
+}
+
+.cardexp p {
+  margin-bottom: 15px;
+}
+
+.cardexp ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cardexp li {
+  height: 30px;
+}
+
+.cardexp:nth-child(1) {
+  background-color: #f16529;
+}
+
+.cardexp:nth-child(1) h3 {
+  color: black;
+  font-weight: 600;
+}
+
+.cardexp:nth-child(1) p {
+  font-weight: 600;
+}
+
+.cardexp:nth-child(2) {
+  background-color: #2965f1;
+}
+
+.cardexp:nth-child(2) h3 {
+  color: black;
+  font-weight: 600;
+}
+
+.cardexp:nth-child(2) p {
+  font-weight: 600;
+}
+
+.cardexp:nth-child(3) {
+  background-color: #f0db4f;
+}
+
+.cardexp:nth-child(3) h3 {
+  color: black;
+  font-weight: 600;
+}
+
+.cardexp:nth-child(3) p {
+  font-weight: 600;
+}
+
+.cardexp:nth-child(4) {
+  background-color: #61dafb;
+}
+
+.cardexp:nth-child(4) h3 {
+  color: black;
+  font-weight: 600;
+}
+
+.cardexp:nth-child(4) p {
+  font-weight: 600;
+}
+
+.cardexp:nth-child(5) {
+  background-color: #24292f;
+}
+
+.cardexp:nth-child(5) h3 {
+  color: black;
+  font-weight: 600;
+}
+
+.cardexp:nth-child(5) p {
+  font-weight: 600;
+}
+
+.cardexp.php {
+  background-color: #6c5ce7;
+}
+
+.cardexp.php h3 {
+  color: black;
+  font-weight: 600;
+}
+
+.cardexp.php p {
+  font-weight: 600;
+}
+
+.cardexp.mysql {
+  background-color: #2d3436;
+}
+
+.cardexp.mysql h3 {
+  color: black;
+  font-weight: 600;
+}
+
+.cardexp.mysql p {
+  font-weight: 600;
+}
+
+/* Formulario */
+.itemform {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.itemform label {
+  font-weight: 700;
+}
+
+.itemform input,
+.itemform textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: #333;
+  color: white;
+}
+
+input[type="submit"] {
+  background-color: #222;
+  border: 1px solid #222;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffc900;
+  color: #222;
+}
+
+/* Reloj en el header */
+#reloj {
+  font-size: 24px;
+  color: #ffc900; /* Color amarillo brillante */
+  text-align: right;
+  padding-right: 20px;
+  font-weight: bold;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
+}
+
+/* Footer con fecha */
+#fecha-footer {
+  font-size: 16px;
+  color: white;
+  margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  nav ul li {
+    padding: 10px 0;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  #sobremi {
+    grid-template-columns: 1fr;
+  }
+
+  .filaportfolio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .gridexp {
+    grid-template-columns: 1fr;
+  }
+
+  #contactar {
+    padding: 20px;
+  }
+}
